@@ -1,7 +1,11 @@
 package FourExercisesOnDecisionAndLoop;
 
+import java.util.*;
+import java.util.stream.Stream;
+
 public class Tribonacci {
     public static void main(String[] args) {
+
         final int N_MAX = 20;
         int n = 3;
         int fn;
@@ -24,5 +28,8 @@ public class Tribonacci {
         }
         average = (double) sum / (double) N_MAX;
         System.out.print("\nThe average is " + average);
+
+
+
     }
 }
