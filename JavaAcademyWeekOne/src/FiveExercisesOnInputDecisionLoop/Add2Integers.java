@@ -1,4 +1,8 @@
 package FiveExercisesOnInputDecisionLoop;
+/*
+Write a program called Add2Integers that prompts user to enter two integers.
+The program shall read the two integers as int; compute their sum; and print the result.
+ */
 import java.util.Scanner;
 
 public class Add2Integers {

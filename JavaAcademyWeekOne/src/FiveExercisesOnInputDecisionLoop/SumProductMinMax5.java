@@ -1,5 +1,9 @@
 package FiveExercisesOnInputDecisionLoop;
-
+/*
+Write a program called SumProductMinMax5 that prompts user for five integers. The program shall read the inputs as int;
+compute the sum, product, minimum and maximum of the five integers; and print the results. Use five int variables:
+number1, number2, ..., number5 to store the inputs.
+ */
 import java.util.Scanner;
 
 public class SumProductMinMax5 {
