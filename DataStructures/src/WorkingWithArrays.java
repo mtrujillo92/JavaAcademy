@@ -6,6 +6,7 @@ public class WorkingWithArrays {
         colors[0] = "purple";
         colors[1] = "blue";
 
+
         System.out.println(Arrays.toString(colors));
 
         System.out.println(colors[0]);
