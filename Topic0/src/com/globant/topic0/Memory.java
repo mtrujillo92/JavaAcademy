@@ -1,4 +1,6 @@
-package com.miguel.javacourse;
+package com.globant.topic0;
+
+import com.globant.topic0.exception.MemoryOverflowException;
 
 import java.util.*;
 
@@ -85,10 +87,4 @@ public class Memory {
         System.out.println();
     }
 
-
-    public static class MemoryOverflowException extends Throwable {
-        public MemoryOverflowException(String message){
-            super(message);
-        }
-    }
 }

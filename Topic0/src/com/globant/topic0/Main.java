@@ -1,10 +1,12 @@
-package com.miguel.javacourse;
+package com.globant.topic0;
+
+import com.globant.topic0.exception.MemoryOverflowException;
 
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws Memory.MemoryOverflowException {
+    public static void main(String[] args) throws MemoryOverflowException {
         Memory memoryTest = new Memory();
         String input;
         Scanner in = new Scanner(System.in);
