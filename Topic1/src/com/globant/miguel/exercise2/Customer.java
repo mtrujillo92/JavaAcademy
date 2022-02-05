@@ -1,4 +1,4 @@
-package com.globant.migue.exercise2;
+package com.globant.miguel.exercise2;
 
 public class Customer implements Observer{
 
