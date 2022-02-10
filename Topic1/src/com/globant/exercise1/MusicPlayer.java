@@ -1,4 +1,4 @@
-package com.globant.miguel.exercise1;
+package com.globant.exercise1;
 
 public class MusicPlayer {
     private final Color color;

@@ -1,4 +1,4 @@
-package com.globant.miguel.exercise2;
+package com.globant.exercise2;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.globant.miguel.excercise3;
+package com.globant.excercise3;
 
 public class BasicHotDog{
 

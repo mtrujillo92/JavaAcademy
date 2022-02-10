@@ -1,6 +1,7 @@
-package com.globant.miguel.excercise3;
+package com.globant.excercise3;
 
-import com.globant.miguel.excercise3.decorators.*;
+import com.globant.excercise3.decorators.*;
+import com.globant.excercise3.decorators.*;
 
 import java.util.Scanner;
 

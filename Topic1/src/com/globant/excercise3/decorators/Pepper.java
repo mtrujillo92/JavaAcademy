@@ -1,6 +1,6 @@
-package com.globant.miguel.excercise3.decorators;
+package com.globant.excercise3.decorators;
 
-import com.globant.miguel.excercise3.BasicHotDog;
+import com.globant.excercise3.BasicHotDog;
 
 public class Pepper extends HotDogDecorator{
     private BasicHotDog hotDog;
