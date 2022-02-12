@@ -9,12 +9,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
     @Bean
-    public Printer getImpresoraBN(){
+    public Printer getBlackWhitePrinter(){
         return new BlackWhitePrinter();
     }
 
     @Bean
-    public Printer getImpresoraColor(){
+    public Printer getColorPrinter(){
         return new ColorPrinter();
     }
 

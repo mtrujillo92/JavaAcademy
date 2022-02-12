@@ -3,12 +3,12 @@ package com.globant.topic2.service;
 import com.globant.topic2.beans.Printer;
 
 public class PrinterService {
-    private Printer impresora;
+    private Printer printer;
 
-    public PrinterService(Printer impresora) {
-        this.impresora = impresora;
+    public PrinterService(Printer printer) {
+        this.printer = printer;
     }
-    public void imprimir(String texto){
-        impresora.print(texto);
+    public void print(String document){
+        printer.print(document);
     }
 }
