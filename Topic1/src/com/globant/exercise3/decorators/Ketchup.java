@@ -1,6 +1,6 @@
-package com.globant.excercise3.decorators;
+package com.globant.exercise3.decorators;
 
-import com.globant.excercise3.BasicHotDog;
+import com.globant.exercise3.BasicHotDog;
 
 public class Ketchup extends HotDogDecorator {
     private BasicHotDog hotDog;
