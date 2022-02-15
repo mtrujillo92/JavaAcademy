@@ -1,6 +1,6 @@
-package com.globant.functional.v2_superfunciones_clases;
+package com.globant.functional.v3_superfunciones_inline_clases;
 
-import com.globant.functional.v2_superfunciones_clases.interfaces.*;
+import com.globant.functional.v3_superfunciones_inline_clases.interfaces.*;
 
 import java.util.ArrayList;
 import java.util.List;
