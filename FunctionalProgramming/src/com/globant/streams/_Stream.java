@@ -21,10 +21,10 @@ public class _Stream {
 //                .map(person -> person.gender)
 //                .collect(Collectors.toSet())
 //                .forEach(System.out::println);
-//        people.stream()
-//                .map(person -> person.name)
-//                .mapToInt(String::length)
-//                .forEach(System.out::println);
+       people.stream()
+                .map(person -> person.name)
+                .mapToInt(String::length)
+                .forEach(x -> System.out.println(x));
 
         boolean containsOnlyFemales = people.stream()
                 .anyMatch(person -> FEMALE.equals(person.gender));//show if you have at least one of them
