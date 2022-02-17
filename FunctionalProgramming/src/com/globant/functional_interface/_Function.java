@@ -30,7 +30,7 @@ public class _Function {
 
     static Function<Integer,Integer> incrementByOneFunction = number -> number + 1;
 
-    static Function<Integer, Integer> multiplyBy10Function = number -> number * 10;
+    static Function<Integer,Integer> multiplyBy10Function = number -> number * 10;
 
     static int incrementByOne(int number){
         return number+1;
