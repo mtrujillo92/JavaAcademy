@@ -1,6 +1,6 @@
-package com.globant.Topic5.repository;
+package com.globant.OneToManyCrud.repository;
 
-import com.globant.Topic5.entity.Item;
+import com.globant.OneToManyCrud.entity.Item;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

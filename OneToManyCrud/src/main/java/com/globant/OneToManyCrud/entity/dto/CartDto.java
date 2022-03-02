@@ -1,7 +1,6 @@
-package com.globant.Topic5.entity.dto;
+package com.globant.OneToManyCrud.entity.dto;
 
-import com.globant.Topic5.entity.Cart;
-import com.globant.Topic5.entity.Item;
+import com.globant.OneToManyCrud.entity.Cart;
 import lombok.Data;
 
 import java.util.ArrayList;

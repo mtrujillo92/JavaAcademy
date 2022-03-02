@@ -1,8 +1,8 @@
-package com.globant.Topic5.controller;
+package com.globant.OneToManyCrud.controller;
 
-import com.globant.Topic5.entity.Item;
-import com.globant.Topic5.entity.dto.ItemDto;
-import com.globant.Topic5.service.ItemService;
+import com.globant.OneToManyCrud.entity.Item;
+import com.globant.OneToManyCrud.entity.dto.ItemDto;
+import com.globant.OneToManyCrud.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

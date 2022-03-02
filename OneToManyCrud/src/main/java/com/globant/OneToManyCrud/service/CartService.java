@@ -1,10 +1,10 @@
-package com.globant.Topic5.service;
+package com.globant.OneToManyCrud.service;
 
-import com.globant.Topic5.entity.Cart;
-import com.globant.Topic5.entity.Item;
-import com.globant.Topic5.exception.CartNotFoundException;
-import com.globant.Topic5.exception.ItemIsAlreadyAssignedException;
-import com.globant.Topic5.repository.CartRepository;
+import com.globant.OneToManyCrud.entity.Cart;
+import com.globant.OneToManyCrud.entity.Item;
+import com.globant.OneToManyCrud.exception.CartNotFoundException;
+import com.globant.OneToManyCrud.exception.ItemIsAlreadyAssignedException;
+import com.globant.OneToManyCrud.repository.CartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

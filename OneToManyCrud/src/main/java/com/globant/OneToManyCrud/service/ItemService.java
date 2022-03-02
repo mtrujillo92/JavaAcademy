@@ -1,8 +1,8 @@
-package com.globant.Topic5.service;
+package com.globant.OneToManyCrud.service;
 
-import com.globant.Topic5.entity.Item;
-import com.globant.Topic5.exception.ItemNotFoundException;
-import com.globant.Topic5.repository.ItemRepository;
+import com.globant.OneToManyCrud.entity.Item;
+import com.globant.OneToManyCrud.exception.ItemNotFoundException;
+import com.globant.OneToManyCrud.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

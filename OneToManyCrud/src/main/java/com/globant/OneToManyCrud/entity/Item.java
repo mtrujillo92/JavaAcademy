@@ -1,6 +1,6 @@
-package com.globant.Topic5.entity;
+package com.globant.OneToManyCrud.entity;
 
-import com.globant.Topic5.entity.dto.ItemDto;
+import com.globant.OneToManyCrud.entity.dto.ItemDto;
 import lombok.*;
 import org.hibernate.Hibernate;
 
