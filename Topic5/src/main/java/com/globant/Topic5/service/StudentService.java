@@ -10,5 +10,7 @@ public interface StudentService {
     public List<StudentDto> getAllStudents();
     public StudentDto updateStudent(Integer studentId, StudentDto student);
     public String deleteStudent(Integer studentId);
+    public StudentDto addCourseToStudentById(Integer studentId, StudentDto studentDto, Integer courseId);
+    public StudentDto removeCourseToStudentById(Integer studentId, StudentDto studentDto, Integer courseId);
 }
 

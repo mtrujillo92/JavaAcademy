@@ -25,6 +25,7 @@ public class StudentServiceImpl implements StudentService{
     private CourseRepository courseRepository;
 
 
+
     @Override
     @Transactional
     public StudentDto addStudent(StudentDto studentDto) {
@@ -49,7 +50,6 @@ public class StudentServiceImpl implements StudentService{
     @Transactional
     public StudentDto updateStudent(Integer studentId, StudentDto studentDto) {
         Student student1 = studentRepository.getById(studentId);
-        student1.getCourses().clear();
         mapDtoToEntity(studentDto, student1);
         Student student = studentRepository.save(student1);
         return mapEntityToDto(student);
@@ -62,6 +62,30 @@ public class StudentServiceImpl implements StudentService{
             student.get().removeCourses();
             studentRepository.deleteById(student.get().getId());
             return "Student with id: " + studentId + "deleted successfully";
+        }
+        return null;
+    }
+
+    @Override
+    public StudentDto addCourseToStudentById(Integer studentId, StudentDto studentDto, Integer courseId) {
+        Student student1 = studentRepository.getById(studentId);
+        Optional<Course> course = courseRepository.findById(courseId);
+        if(course.isPresent()){
+            student1.addCourse(course.get());
+            Student student = studentRepository.save(student1);
+            return mapEntityToDto(student);
+        }
+        return null;
+    }
+
+    @Override
+    public StudentDto removeCourseToStudentById(Integer studentId, StudentDto studentDto, Integer courseId) {
+        Student student1 = studentRepository.getById(studentId);
+        Optional<Course> course = courseRepository.findById(courseId);
+        if(course.isPresent()){
+            student1.removeCourse(course.get());
+            Student student = studentRepository.save(student1);
+            return mapEntityToDto(student);
         }
         return null;
     }
