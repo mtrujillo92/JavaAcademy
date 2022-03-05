@@ -52,6 +52,9 @@ if you need something else, here is my notion account, here I wrote some importa
       <li><a href="https://www.notion.so/Spring-Framework-ea5a7e0d9fa74a379b4890789773cb76">Spring Framework</a></li>
       <li><a href="https://www.notion.so/Spring-Data-a530384a3cfc4de3829da0c3c6f7545a">Spring Data</a></li>
       <li><a href="https://www.notion.so/Spring-Cloud-0602c81564594a6ba1cc50cbbf2f5f06">Spring Cloud</a></li>
+      <ul>
+            <li><a href="https://www.notion.so/Spring-Cloud-Config-ad6d1bbf732541c4ba1c50b3b81b70bc">Spring Cloud Config</a></li>
+      </ul>     
 </ul> 
       
 <h3>Functional Programming:</h3>
