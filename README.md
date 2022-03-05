@@ -59,8 +59,6 @@ if you need something else, here is my notion account, here I wrote some importa
       <li><a href="https://www.notion.so/Function-2df46a3a22e2465ea7f486aadae99cb7">Function</a></li>
       <li><a href="https://www.notion.so/Consumer-294a232b642948fdbbba95bd0cf1c2dd">Consumer</a></li>
 </ul> 
-
-      <h3><a href="https://www.notion.so/Microservicios-362a8f1e51f14a92b5a0973ab7f47d50">Microservices</h3>
-            <hr>
-                
-      <h2><a href="https://www.notion.so/Git-59f6278a86174b25af5bb6f2456a53ba"> Git </a></h2>
+<h3><a href="https://www.notion.so/Microservicios-362a8f1e51f14a92b5a0973ab7f47d50">Microservices</h3>
+<hr>
+<h2><a href="https://www.notion.so/Git-59f6278a86174b25af5bb6f2456a53ba"> Git</a></h2>
