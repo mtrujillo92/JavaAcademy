@@ -11,7 +11,7 @@ public class Account {
     private AccountType accountType;
     private String userName;
     private String userSurname;
-    private Double identityNumber;
+    private String identityNumber;
     private Double funds;
     private Bank bank;
 }
