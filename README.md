@@ -9,7 +9,7 @@ thanks for be here, in this repo you will find some practice code that I did whi
 <a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic3"> Topic 3 </a> <br>
 <a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic4"> Topic 4 </a> <br>
 <a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic5"> Topic 5 </a> <br>
-<a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic5"> Topic 6 </a> <br>
+<a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic6"> Topic 6 </a> <br>
 # My notion notes 
 
 if you need something else, here is my notion account, here I wrote some important information to me, to study
@@ -55,6 +55,7 @@ if you need something else, here is my notion account, here I wrote some importa
       <li><a href="https://www.notion.so/Spring-Cloud-0602c81564594a6ba1cc50cbbf2f5f06">Spring Cloud</a></li>
       <ul>
             <li><a href="https://www.notion.so/Spring-Cloud-Config-ad6d1bbf732541c4ba1c50b3b81b70bc">Spring Cloud Config</a></li>
+            <li><a href="https://www.notion.so/Spring-Cloud-Service-Registration-and-Discovery-049f33e0a6934444874a584a7c5bf2f4">Spring Cloud Service Registration and Discovery</a></li>
       </ul>     
 </ul> 
       
