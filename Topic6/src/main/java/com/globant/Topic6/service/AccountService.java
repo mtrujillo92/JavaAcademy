@@ -12,16 +12,16 @@ public class AccountService {
     @Autowired
     private BankTransaction bankTransaction;
 
-    public void transferFunds(Account transferAccount, Account destinationAccount, Double amountToTransfer){
-        transferAccount = bankTransaction.originAccount();
+    public void transferFunds(Account originAccount, Account destinationAccount, Double amountToTransfer){
+        originAccount = bankTransaction.originAccount();
         destinationAccount = bankTransaction.destinationAccount();
         double MAX_TO_TRANSFER_WOUT_TAX = Double.valueOf(1500000);
         double TAX = 0.97;
 
         if(!isCurrentAccount(destinationAccount)){
-            if(!isTheSameBank(transferAccount,destinationAccount)){
-                    if(areEnoughFunds(transferAccount,(amountToTransfer+3500))){
-                        transferAccount.setFunds(transferAccount.getFunds()-(amountToTransfer+3500));
+            if(!isTheSameBank(originAccount,destinationAccount)){
+                    if(areEnoughFunds(originAccount,(amountToTransfer+3500))){
+                        originAccount.setFunds(originAccount.getFunds()-(amountToTransfer+3500));
                         if(amountToTransfer > MAX_TO_TRANSFER_WOUT_TAX){
                             destinationAccount.setFunds(destinationAccount.getFunds()+(amountToTransfer*0.97));
                         }else {
@@ -31,8 +31,8 @@ public class AccountService {
                         throw new InsufficientFundsException();
                     }
             }else{
-                if(areEnoughFunds(transferAccount,amountToTransfer)){
-                    transferAccount.setFunds(transferAccount.getFunds()-amountToTransfer);
+                if(areEnoughFunds(originAccount,amountToTransfer)){
+                    originAccount.setFunds(originAccount.getFunds()-amountToTransfer);
                     destinationAccount.setFunds(destinationAccount.getFunds()+amountToTransfer);
                 }else {
                     throw new InsufficientFundsException();
@@ -41,7 +41,7 @@ public class AccountService {
         }else{
             if(!haveMoreThanTripleFunds(destinationAccount,amountToTransfer)){
                 if(amountToTransfer > MAX_TO_TRANSFER_WOUT_TAX){
-                    transferAccount.setFunds(transferAccount.getFunds()-amountToTransfer);
+                    originAccount.setFunds(originAccount.getFunds()-amountToTransfer);
                     destinationAccount.setFunds(destinationAccount.getFunds()+(amountToTransfer*0.97));
                 }else {
                     destinationAccount.setFunds(destinationAccount.getFunds()+amountToTransfer);
@@ -54,12 +54,12 @@ public class AccountService {
 
     }
 
-    private boolean areEnoughFunds(Account transferAccount, Double amountToTransfer){
-        return transferAccount.getFunds() >= amountToTransfer;
+    private boolean areEnoughFunds(Account originAccount, Double amountToTransfer){
+        return originAccount.getFunds() >= amountToTransfer;
     }
 
-    private boolean isTheSameBank(Account transferAccount, Account destinationAccount){
-        return transferAccount.getBank().getId() == destinationAccount.getBank().getId();
+    private boolean isTheSameBank(Account originAccount, Account destinationAccount){
+        return originAccount.getBank().getId() == destinationAccount.getBank().getId();
     }
 
     private boolean isCurrentAccount(Account destinationAccount){
