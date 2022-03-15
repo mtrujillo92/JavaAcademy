@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Alien list</title>
+</head>
+<body>
+    <th:block th:each="iterator : ${alien}">
+        <p th:text=${alien}></p>
+    </th:block>
+</body>
+</html>
