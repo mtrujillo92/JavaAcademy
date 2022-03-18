@@ -5,8 +5,7 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-
+import java.time.LocalDateTime;
 
 
 @Getter
@@ -19,15 +18,13 @@ public class WeatherData {
     @SequenceGenerator(name = "weather_sequence", sequenceName = "weather_sequence")
     private Integer id;
 
-    @DateTimeFormat(pattern = "yyyy-mm-dd")
-    private LocalDate date;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "location_id")
+    private String date;
+
+    @Embedded
     private Location location;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "temperature_id")
+    @Embedded
     private Temperature temperature;
 
 }

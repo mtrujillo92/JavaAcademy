@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Form</title>
+</head>
+<body>
+<div th:insert="~{header :: page-header}"></div>
+
+<div class="form-div"><form method="post" th:action="@{/addWeather}" th:object="${weatherData}">
+
+    <div class="form-group">
+        <label for="date">Date</label>
+        <input th:field="*{date}" id="date" type="date"
+               class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="lat">Latitude</label>
+        <input th:field="*{location.lat}" id="lat" placeholder="Type here the latitude of the location " type="number"
+               step=".0001" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="lon">Longitude</label>
+        <input th:field="*{location.lon}" id="lon" placeholder="Type here the longitude of the location " type="number"
+               step=".0001">
+    </div>
+    <div class="form-group">
+        <label for="city">City</label>
+        <input th:field="*{location.city}" id="city" placeholder="Type the city" type="text">
+    </div>
+    <div class="form-group">
+        <label for="state">State</label>
+        <input th:field="*{location.state}" id="state" placeholder="Type the state" type="text">
+    </div>
+    <div class="form-group">
+        <label for="temperatureOne">Temperature 1</label>
+        <input th:field="*{temperature.temperatureOne}" id="temperatureOne" placeholder="Type the temperature #1" type="number"
+               step=".1">
+    </div>
+    <div class="form-group">
+        <label for="temperatureTwo">Temperature 2</label>
+        <input th:field="*{temperature.temperatureTwo}" id="temperatureTwo" placeholder="Type the temperature #2" type="number"
+               step=".1">
+    </div>
+    <div class="form-group">
+        <label for="temperatureThree">Temperature 3</label>
+        <input th:field="*{temperature.temperatureThree}" id="temperatureThree" placeholder="Type the temperature #3" type="number"
+               step=".1">
+    </div>
+    <div class="form-group">
+        <label for="temperatureFour">Temperature 4</label>
+        <input th:field="*{temperature.temperatureFour}" id="temperatureFour" placeholder="Type the temperature #4" type="number"
+               step=".1">
+    </div>
+
+    <button type="submit">Save</button><br>
+</form></div>
+<a th:href="@{/}">Return</a>
+</body>
+</html>
