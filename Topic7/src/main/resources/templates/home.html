@@ -9,28 +9,28 @@
 <div th:insert="~{header :: page-header}"></div>
 <h1>Weather List</h1>
 
-<table>
+<table border="1">
     <tr>
-        <th>Date</th>
-        <th>Latitude</th>
-        <th>Longitude</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Temperatures</th>
+        <th style="padding: 20px">Date</th>
+        <th style="padding: 20px">Latitude</th>
+        <th style="padding: 20px">Longitude</th>
+        <th style="padding: 20px">City</th>
+        <th style="padding: 20px">State</th>
+        <th style="padding: 20px">Temperatures</th>
     </tr>
     <tr th:each="weather, weatherDataList : ${weatherData}">
-        <td th:text="${weather.date}">Onions</td>
-        <td th:text="${weather.location.lat}">2.41</td>
-        <td th:text="${weather.location.lon}">2.41</td>
-        <td th:text="${weather.location.city}">2.41</td>
-        <td th:text="${weather.location.state}">2.41</td>
-        <td ><ul>
-            <li th:text="${weather.temperature.temperatureOne}">1</li>
-            <li th:text="${weather.temperature.temperatureTwo}">1</li>
-            <li th:text="${weather.temperature.temperatureThree}">1</li>
-            <li th:text="${weather.temperature.temperatureFour}">1</li>
+        <td th:text="${weather.date}" style="text-align:center; padding:20px">Onions</td>
+        <td th:text="${weather.location.lat}" style="text-align:center">2.41</td>
+        <td th:text="${weather.location.lon}" style="text-align:center">2.41</td>
+        <td th:text="${weather.location.city}" style="text-align:center">2.41</td>
+        <td th:text="${weather.location.state}" style="text-align:center">2.41</td>
+        <td style="text-align:center"><ul>
+            <li th:text="${weather.temperature.temperatureOne} + ' °F'">1</li>
+            <li th:text="${weather.temperature.temperatureTwo} + ' °F'">1</li>
+            <li th:text="${weather.temperature.temperatureThree} + ' °F'">1</li>
+            <li th:text="${weather.temperature.temperatureFour} + ' °F'">1</li>
         </ul></td>
-        <td>
+        <td style="text-align:center; padding:20px">
             <a th:href="@{'/weather/' + ${weather.id}}">Delete</a><br>
             <a th:href="@{'/weatherEdit/' + ${weather.id}}">Edit</a><br>
         </td>
