@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
     <title>Weather App</title>
 
 </head>
 <body>
-
 <div th:insert="~{header :: page-header}"></div>
+<h1>Weather List</h1>
+
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Temperatures</th>
+    </tr>
+    <tr th:each="weather, weatherDataList : ${weatherData}">
+        <td th:text="${weather.date}">Onions</td>
+        <td th:text="${weather.location.lat}">2.41</td>
+        <td th:text="${weather.location.lon}">2.41</td>
+        <td th:text="${weather.location.city}">2.41</td>
+        <td th:text="${weather.location.state}">2.41</td>
+        <td ><ul>
+            <li th:text="${weather.temperature.temperatureOne}">1</li>
+            <li th:text="${weather.temperature.temperatureTwo}">1</li>
+            <li th:text="${weather.temperature.temperatureThree}">1</li>
+            <li th:text="${weather.temperature.temperatureFour}">1</li>
+        </ul></td>
+        <td>
+            <a th:href="@{'/weather/' + ${weather.id}}">Delete</a><br>
+            <a th:href="@{'/weatherEdit/' + ${weather.id}}">Edit</a><br>
+        </td>
+
+    </tr>
+</table>
+
+<p>
+    <a href="../home.html" th:href="@{/}">Return to home</a>
+</p>
 
 <div><a href="/weathers" th:text="#{home.create}">Create....</a></div>
-
 
 </body>
 </html>

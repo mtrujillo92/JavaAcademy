@@ -7,8 +7,13 @@
 <body>
 <div th:insert="~{header :: page-header}"></div>
 
-<div class="form-div"><form method="post" th:action="@{/addWeather}" th:object="${weatherData}">
+<div class="form-div"><form method="post" th:action="@{/weatherEdit}" th:object="${weatherToUpdate}">
 
+    <div class="form-group" style="display: none">
+        <label for="id" th:text="#{weather.date}">Id</label>
+        <input th:field="*{id}" id="id" type="number"
+               class="form-control">
+    </div>
     <div class="form-group">
         <label for="date" th:text="#{weather.date}">Date</label>
         <input th:field="*{date}" id="date" type="date"
@@ -17,12 +22,12 @@
 
     <div class="form-group">
         <label for="lat" th:text="#{weather.lat}">Latitude</label>
-        <input th:field="*{location.lat}" id="lat" placeholder="Type here the latitude of the location " type="number"
+        <input th:field="*{location.lat}" id="lat" placeholder="Type here the longitude of the location" type="number"
                step=".0001" class="form-control">
     </div>
     <div class="form-group">
         <label for="lon" th:text="#{weather.lon}">Longitude</label>
-        <input th:field="*{location.lon}" id="lon" placeholder="Type here the longitude of the location " type="number"
+        <input th:field="*{location.lon}" id="lon" placeholder="Type here the longitude of the location" type="number"
                step=".0001">
     </div>
     <div class="form-group">
@@ -54,7 +59,7 @@
                step=".1">
     </div>
 
-    <button type="submit">Save</button><br>
+    <button type="submit">Update</button><br>
 </form></div>
 <a th:href="@{/}">Return</a>
 </body>

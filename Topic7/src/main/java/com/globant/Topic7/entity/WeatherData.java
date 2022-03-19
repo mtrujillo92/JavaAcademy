@@ -18,7 +18,6 @@ public class WeatherData {
     @SequenceGenerator(name = "weather_sequence", sequenceName = "weather_sequence")
     private Integer id;
 
-
     private String date;
 
     @Embedded
