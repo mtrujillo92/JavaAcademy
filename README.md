@@ -10,6 +10,7 @@ thanks for be here, in this repo you will find some practice code that I did whi
 <a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic4"> Topic 4 </a> <br>
 <a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic5"> Topic 5 </a> <br>
 <a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic6"> Topic 6 </a> <br>
+<a href="https://github.com/mtrujillo92/JavaAcademy/tree/main/Topic7"> Topic 7 </a> <br>
 # My notion notes 
 
 if you need something else, here is my notion account, here I wrote some important information to me, to study
